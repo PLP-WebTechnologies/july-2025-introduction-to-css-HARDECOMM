@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Stylist Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My First Stylist Webpage</h1>
+    </header>
+    
+    <main>
+        <section class="container">
+            <div class="section_title">
+                <h2>Course Overview</h2>
+                <p>This course will cover the basics of CSS, including selectors, properties, and layout techniques.</p>
+            </div>
+            <div class="course_list">
+                <ul>
+                    <li>HTML5 Structure</li>
+                    <li>Enhance Lists</li>
+                    <li>Enhance Tables</li>
+                    <li>Embedding Images</li>
+                    <li>Embedding Video</li>
+                    <li>Embedding Audio</li>
+                    <li>Enhance Form</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="section_title">
+                <h2>My Weekly Schedule</h2>
+                <p>This is a representation of my weekly schedule.</p>
+            </div>
+            <div class="table_contents">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Time</th>
+                            <th>Location</th>
+                            <th>Activity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sunday</td><td>10 AM</td><td>Lagos</td><td>Church</td><td>Inactive</td></tr>
+                        <tr><td>Monday</td><td>12 AM</td><td>Abuja</td><td>Campaign</td><td>Inactive</td></tr>
+                        <tr><td>Tuesday</td><td>10 AM</td><td>Abuja</td><td>Campaign</td><td>Inactive</td></tr>
+                        <tr><td>Wednesday</td><td>11 AM</td><td>Abeokuta</td><td>Event</td><td>Active</td></tr>
+                        <tr><td>Thursday</td><td>9 AM</td><td>Osun</td><td>Sermon</td><td>Active</td></tr>
+                        <tr><td>Friday</td><td>1 PM</td><td>Ilorin</td><td>Jumat</td><td>Upcoming</td></tr>
+                        <tr><td>Saturday</td><td>10 PM</td><td>Lagos</td><td>Meetings</td><td>Inactive</td></tr>
+                    </tbody>
+                </table>
+            </div>    
+        </section>
+
+        <section class="container">
+            <div class="section_title">
+                <h2>Media Embedding</h2>
+                <p>This section demonstrates how to embed images, videos, and audio.</p>
+            </div>
+            <div class="media-container">
+                <figure class="media-item">
+                    <img src="media/img4.jpg" alt="A beautiful view of nature" class="full-width-image">
+                    <figcaption>A beautiful view of nature.</figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video controls class="full-width-video">
+                        <source src="media/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Please add a video source.
+                    </video>
+                    <figcaption>A sample video.</figcaption>
+                </figure>
+                <figure class="media-item">
+                    <audio controls class="full-width-audio">
+                        <source src="media/asa_eye_adaba.mp3" type="audio/mp3">
+                        Your browser does not support the audio tag. Please add an audio source.
+                    </audio>
+                    <figcaption>A sample audio clip.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="section_title">
+                <h2>Registration Form</h2>
+                <p>Please fill out the form below to register.</p>
+            </div>
+            <div class="form-section-grid">
+                <div class="form-requirements">
+                    <h3>Password Requirements:</h3>
+                    <ul>
+                        <li>Must be at least 10 characters</li>
+                        <li>At least one lowercase letter</li>
+                        <li>At least one uppercase letter</li>
+                        <li>At least one special character</li>
+                        <li>Must include at least one number</li>
+                    </ul>
+                </div>
+                <div class="form-container">
+                    <form id="registration-form" action="#" method="post">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required autocomplete="name" autofocus>
+                            
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g., 080-123-45678" required autocomplete="tel" pattern="\d{3}-\d{3}-\d{5}">
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required autocomplete="email">
+                            
+                            <label for="verify-email">Verify Your Email:</label>
+                            <input type="email" id="verify-email" name="verify-email" placeholder="Re-enter your email" required autocomplete="off">
+                    
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="10" autocomplete="new-password">
+                    
+                            <label for="verify-password">Verify Your Password:</label>
+                            <input type="password" id="verify-password" name="verify-password" placeholder="Re-enter your password" required minlength="10" autocomplete="new-password">
+                        </fieldset>
+
+                        <fieldset>
+                             <legend>Additional Information</legend>
+                            <label for="feedback">Short Story About You:</label>
+                            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                            
+                            <label for="rating">Rate Us:</label>
+                            <select id="rating" name="rating" required>
+                                <option value="">Select...</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="average">Average</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </fieldset>
+
+                        <div class="submit-container">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer_section">
+        <p>&copy; 2025 Introduction to CSS Course. Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions.</p>
+    </footer>
+</body>
+</html>
